@@ -1,0 +1,12 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 100
+
+# Definicion JointVelocityController (Controlador asociada a la rueda)
+left_wheel_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: left_wheel_joint
+
+right_wheel_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: right_wheel_joint
