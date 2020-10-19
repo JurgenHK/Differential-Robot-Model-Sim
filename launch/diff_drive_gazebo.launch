@@ -39,7 +39,7 @@
             -model differential"
 />
 
-<!-- RQT GUI-->
-<node name="rqt_gui" pkg="rqt_gui" type="rqt_gui"/>
+<!-- Drive Node-->
+<node pkg="my_diff_robot" type="diff_drive_model.py" name="diff_drive" output="screen"/>
 
 </launch>
